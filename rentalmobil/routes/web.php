@@ -35,3 +35,11 @@ Route::post('/merk/simpan-data',[MerkController::class, 'store']);
 Route::get('/merk/edit/{id}',[MerkController::class, 'fromEdit']);
 Route::post('/merk/update/{id}',[MerkController::class, 'update']);
 Route::get('/merk/delete/{id}',[MerkController::class, 'delete']);
+
+// pertemuan 13
+Route::get('/tipemobil',[TipeMobilController::class, 'index']);
+Route::get('/tipemobil/create',[TipeMobilController::class, 'create']);
+Route::post('/tipemobil/simpan-data',[TipeMobilController::class, 'store']);
+Route::get('/tipemobil/edit/{id}',[TipeMobilController::class, 'formEdit']);
+Route::get('/tipemobil/update/{id}',[TipeMobilController::class, 'update']);
+Route::get('/tipemobil/delete/{id}',[TipeMobilController::class, 'delete']);
